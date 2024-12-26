@@ -1,6 +1,6 @@
 {
   "name": "nuxt-pdf-utils",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Doing amazing things about pdf in the nuxt app.",
   "repository": "https//github.com/trankhacbinhduong/nuxt-pdf-utils",
   "license": "MIT",
