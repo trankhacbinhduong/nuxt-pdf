@@ -1,4 +1,4 @@
-import { defineNuxtModule, addPlugin, createResolver, addServerImportsDir } from '@nuxt/kit'
+import { defineNuxtModule, createResolver, addServerImportsDir } from '@nuxt/kit'
 import type { Nuxt } from '@nuxt/schema'
 
 export interface ModuleOptions {}
@@ -12,7 +12,6 @@ export default defineNuxtModule<ModuleOptions>({
   setup(_options, nuxt: Nuxt) {
     const resolver = createResolver(import.meta.url)
 
-    addPlugin(resolver.resolve('./runtime/plugin'))
     nuxt.options.nitro.experimental = nuxt.options.nitro.experimental || {}
     nuxt.options.nitro.experimental.asyncContext = true
     addServerImportsDir(resolver.resolve('./runtime/server/utils'))
