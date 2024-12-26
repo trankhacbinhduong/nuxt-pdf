@@ -1,7 +1,7 @@
 <template>
-  <div>
-    Nuxt pdf playground!
-  </div>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
 
 <script setup>
