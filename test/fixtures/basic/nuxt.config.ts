@@ -1,7 +1,12 @@
-import NuxtPdf from '../../../src/module'
+import NuxtPdfUtils from '../../../src/module'
 
 export default defineNuxtConfig({
   modules: [
-    NuxtPdf,
+    NuxtPdfUtils,
   ],
+  nitro: {
+    experimental: {
+      asyncContext: true,
+    },
+  },
 })
